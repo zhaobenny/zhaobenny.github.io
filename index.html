@@ -54,20 +54,69 @@
               </li>
     </nav>
     <div class="container">
-        <div class="row">
+        <div class="row pt-4">
             <div class = "col-lg-3"></div>
-            <div class="col-sm-12 col-lg-6">
-                <img src="./img/cover.jpg" class="pt-4 rounded img-fluid" style="object-fit:cover; max-height: 200px; width: inherit;">
-                <p style="font-size: 11px; text-align: right; margin-bottom: 0px; padding-bottom: 0px">
-                    Random stock picture.
-                </p>
-                <h1 class ="pt-0"> Benny Zhao </h1>
+            <div class="col-sm-12 col-lg-8">
+                <!--carousel start -->
+
+                <div id="projects-carousel" class="carousel slide carousel-fade" data-ride="carousel" style="max-height: 738px;">
+                    <ol class="carousel-indicators">
+                    <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#projects-carousel" data-slide-to="1"></li>
+                    <li data-target="#projects-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="view">
+                            <img src="./img/cards.jpg" class="d-block w-100" style="object-fit: cover; max-height: 20rem;   filter: blur(10px);
+                            -webkit-filter: blur(10px);" alt="Blurred image of cards thrown on a table">
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="h3-responsive">Spot It! - Android App</h3>
+                            <p>Android verison of Spot It! created using Java and a team of fellow classmates.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="view">
+                            <img src="./img/mic.png" class="d-block w-100" style="object-fit: cover; max-height: 20rem;  filter: blur(4px);
+                            -webkit-filter: blur(4px);" alt="Blurred image of a studio microphone on a stand">
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="h3-responsive">b_bot - Discord Bot</h3>
+                            <p>A music bot created for the real-time messaging platform, Discord.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="view">
+                            <img src="./img/hardware.jpg" class="d-block w-100" style="object-fit: cover; max-height: 20rem;  filter: blur(6px);
+                            -webkit-filter: blur(6px);" alt="Blurred closeup of some inner electronics.">
+                        </div>
+                        <div class="carousel-caption">
+                        <h3 class="h3-responsive">Mechanical Miniature Keyboard</h3>
+                        <p> 3 by 3 keys miniature keyboard project using a Teensy 2.0 and C++.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+                <!--/. carousel end -->
+
+                <h1 class ="pt-1"> Benny Zhao </h1>
                 <p style="font-size: large; text-align: justify; margin-bottom: 10px">
                     <b>Hello.</b>
                     <br>
                     My name is Benny Zhao, and
                     I am a current computing science student at Simon Fraser University.
-                    Check out my <a href="projects.html">projects page</a>!
+                    Check out my <a href="projects.html">projects page</a> or <a href="https://github.com/zhaobenny">Github profile</a>!
                     <br>
                     Alternatively, contact me through 👇
                 </p>
@@ -80,7 +129,6 @@
 
             <div class = "col-lg-3"></div>
          </div>
-
     </div>
 
 </body>
